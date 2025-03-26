@@ -1,3 +1,6 @@
 let g:ale_lint_on_insert_leave = 0
-let g:ale_c_parse_makefile = 1
-" let g:ale_c_always_make = 0
+
+" HARD MODE
+let g:HardMode_level = 'wannabe'
+let g:HardMode_hardmodeMsg = 'Don''t use this!'
+autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
